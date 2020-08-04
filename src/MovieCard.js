@@ -1,5 +1,6 @@
 import React from 'react';
-import { useMovies } from './MoviesContext'
+import { useMovies } from './MoviesContext';
+import './MovieCard.css';
 
 export default function MovieCard() {
 	const movieList = useMovies();
