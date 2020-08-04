@@ -1,14 +1,17 @@
 import React from "react";
-import SearchMovies from './SearchMovies';
+import SearchMovies from "./SearchMovies";
+import { MoviesProvider } from "./MoviesContext";
+import MovieCard from './MovieCard'
 
 function App() {
 	return (
-		<div className="App">
+		<MoviesProvider>
 			<div className="container">
 				<h1 className="title">React Movie App</h1>
-				<SearchMovies />
+				<SearchMovies /> 
+				<MovieCard />
 			</div>
-		</div>
+		</MoviesProvider>
 	);
 }
 
